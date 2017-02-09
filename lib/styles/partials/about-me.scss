@@ -1,0 +1,58 @@
+/* About me page styles */
+.section-spacing {
+  margin: 0 auto 40px;
+  width: 80%;
+}
+
+.split-right-about-me {
+  margin-top: 100px;
+}
+
+.split-right-about-me p {
+  margin: 0 0 5px;
+}
+
+.split-right-about-me p span {
+  display: block;
+  margin-bottom: 9px;
+}
+
+
+/* skills ul */
+
+ul.skills {
+  font-family: $body-font;
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-top: 5px;
+  margin-left: 20px;
+  line-height: 1.2em;
+
+  li {
+    font-weight: 300;
+    font-size: 13px;
+    color: $pop-color;
+    padding: 5px 0;
+  }
+
+  span {
+    color: #969696;
+  }
+}
+
+/* Experience */
+
+.work-experience {
+  height: 50px;
+  margin-bottom: 12px;
+}
+
+.work-description {
+  float: left;
+}
+
+.work-year {
+  float: right;
+}
+
+/* Education */

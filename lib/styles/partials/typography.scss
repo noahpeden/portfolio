@@ -1,0 +1,64 @@
+h1 {
+  font-family: $display-font;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 2.7em;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  text-shadow: 1px 1px 12px rgba(0, 0, 0, 0.22);
+}
+
+h3 {
+  font-family: $body-font;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin-bottom: 0 0 15px;
+  line-height: 1.2;
+}
+
+h4 {
+  font-family: $display-font;
+  font-weight: 700;
+  font-size: 27px;
+  letter-spacing: 1px;
+  color: #484848;
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-family: $body-font;
+  font-weight: 500;
+  letter-spacing: .5px;
+  margin: 0 0 3px 0;
+}
+
+h6 {
+  line-height: 1.5em;
+  font-family: $body-font;
+  font-weight: 500;
+  letter-spacing: .5px;
+}
+
+p {
+  font-family: $body-font;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: .3px;
+  margin: 0 0 20px;
+  line-height: 1.5em;
+
+  .contact-p {
+    font-weight: 400;
+    color: $pop-color;
+  }
+}
+
+a {
+  color: $pop-color;
+  text-decoration: none;
+
+  .active {
+    color: $pop-color;
+  }
+}

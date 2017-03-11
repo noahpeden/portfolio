@@ -52,26 +52,38 @@ export default class SplitRightAbout extends Component {
         >
           <h4 ref={(c) => { this.one = c }}>About Noah</h4>
           <p ref={(c) => { this.two = c }}>
-            Noah is a front-end web developer, world traveler, Colorado native, and returned Peace Corps Volunteer to Mongolia. He is a huge believer in team-work and communication, loves Github work flows, and is passionate about anything to do with React or Ember. His dream is to live and work in downtown Denver and go to Rockies/Broncos games forever while skiing in the winter and hiking in the summer.
-
+            I am a Front End Developer with a passion for React, design, travel, and Colorado sports. In 2016 I returned from two years in Mongolia as a Peace Corps volunteer where I developed the educational skills of local teachers in a village of about 1800 population. Combine the communication skills and ability to work in any environment that I gained in Mongolia and the technical prowess I have in front end development,and you get an extremely well rounded developer and that is available to <Link to="/Contact"> work for you.</Link>
           <br />
-          <br />Noah is available to develop, program, and <Link to="/Contact">work for you.</Link><span>
-            <br />
-          Here are some of his skills that don't involve eagles, yurts, or dung-fires:</span></p>
+          <br />
+          <hr className="hr-thing"/>
+          <span>
+          Here are some of my technical skills that don't involve eagles, yurts, or dung-fires:</span></p>
           <ul
             className="skills"
             ref={(c) => { this.three = c }}
           >
-            <li><span>Vanilla Javascript, jQuery, Sass, HTML, CSS, Git</span></li>
-            <li><span>React, React Router, Redux, Ember, Node.js, Express.js</span></li>
-            <li><span>Testing: Mocha, Chai, Enzyme, Jest, Selenium</span></li>
-            <li><span>Foreign languages: Portuguese, Spanish, Mongolian</span></li>
+            <li><span>JavaScript, jQuery, HTML5, CSS3/Sass, Git</span></li>
+            <li><span>React, React Router, React Redux, Ember, Node.js, Express.js</span></li>
+            <li><span>Testing in Mocha, Chai, Enzyme, Jest, Selenium</span></li>
+            <li><span>Speaks fluent Portuguese, Spanish, Mongolian</span></li>
           </ul>
         </section>
-
+        <hr />
         <section className="split-right-experience section-spacing">
           <h4 ref={(c) => { this.four = c }}>Work</h4>
 
+          <div
+            className="work-experience"
+            ref={(c) => { this.five = c }}
+          >
+            <div className="work-description">
+              <h5>Front End Developer</h5>
+              <p>Turing School of Software and Design</p>
+            </div>
+            <div className="work-year">
+              <h5>2016-2017</h5>
+            </div>
+          </div>
           <div
             className="work-experience"
             ref={(c) => { this.five = c }}
@@ -111,7 +123,7 @@ export default class SplitRightAbout extends Component {
             </div>
           </div>
         </section>
-
+        <hr />
         <section className="split-right-education section-spacing">
           <h4 ref={(c) => { this.eight = c }}>Education</h4>
           <div ref={(c) => { this.nine = c }}>

@@ -46,88 +46,92 @@ export default class ProjectsFullPage extends Component {
         opacity: 0,
         y: 50,
         ease: Power2.easeOut },
-      {
-        opacity: 1,
-        y: 0,
-        delay: 0.7,
-        ease: Power2.easeOut },
-      0.12)
-  }
-  handlePaginationClickNext(e) {
-    e.preventDefault()
-    this.setState({ index: this.state.index + 1 })
-    this.gsapAnimationProjectCopy()
-    this.gsapAnimationProject()
-    window.scrollTo(0, 0)
-  }
-  handlePaginationClickPrevious(e) {
-    e.preventDefault()
-    this.setState({ index: this.state.index - 1 })
-    this.gsapAnimationProjectCopy()
-    this.gsapAnimationProject()
-    window.scrollTo(0, 0)
-  }
-  render() {
-    return (
-      <article>
-        <section
-          className="split-left-container split-left-projects"
-          id={Projects[this.state.index].id}
-        >
-          <div>
-            <img
-              src={Projects[this.state.index].image1}
-              ref={(c) => { this.zero = c }}
-            />
-          </div>
-        </section>
+        {
+          opacity: 1,
+          y: 0,
+          delay: 0.7,
+          ease: Power2.easeOut },
+          0.12)
+        }
+        handlePaginationClickNext(e) {
+          e.preventDefault()
+          this.setState({ index: this.state.index + 1 })
+          this.gsapAnimationProjectCopy()
+          this.gsapAnimationProject()
+          window.scrollTo(0, 0)
+        }
+        handlePaginationClickPrevious(e) {
+          e.preventDefault()
+          this.setState({ index: this.state.index - 1 })
+          this.gsapAnimationProjectCopy()
+          this.gsapAnimationProject()
+          window.scrollTo(0, 0)
+        }
+        render() {
+          return (
+            <article>
+              <section
+                className="split-left-container split-left-projects"
+                id={Projects[this.state.index].id}
+                >
+                  <div>
+                    <img
+                      src={Projects[this.state.index].image1}
+                      ref={(c) => { this.zero = c }}
+                    />
+                  </div>
+                </section>
 
-        <section className="split-right split-right-container split-right-projects">
-          <section className="split-right-project-copy" id={Projects[this.state.index].id2}>
-            <h4 ref={(c) => { this.one = c }}>{Projects[this.state.index].title}</h4>
-            <p ref={(c) => { this.two = c }}>{Projects[this.state.index].description}</p>
-            <p ref={(c) => { this.three = c }}>
-              <a
-                href={Projects[this.state.index].github}
-                target="_blank"
-                rel="noopener noreferrer"
-              >view on GitHub</a>
-            </p>
-            <h6 ref={(c) => { this.four = c }}>Skills used: {Projects[this.state.index].skills}</h6>
-            <a
-              ref={(c) => { this.five = c }}
-              href={Projects[this.state.index].url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button
-                className="button light-background-button"
-              >view</button>
-            </a>
-            <div className="project-nav">
-              <button
-                onClick={this.handlePaginationClickPrevious.bind(this)}
-                className={this.state.index === 0 ? 'project-nav-previous-none' : 'project-nav-previous'}
-              >
-                <div
-                  className="arrow previous-arrow"
-                />
-                <p>&larr; {this.state.index === 0 ? '' : Projects[this.state.index - 1].title}</p>
-              </button>
-              <button
-                onClick={this.handlePaginationClickNext.bind(this)}
-                className={this.state.index === 5 ? 'project-nav-next-none' : 'project-nav-next'}
-              >
-                <p>{this.state.index === 5 ? '' : Projects[this.state.index + 1].title} &rarr;</p>
-                <div
-                  className="arrow next-arrow"
-                />
-              </button>
-            </div>
-          </section>
-        </section>
+                <section className="split-right split-right-container split-right-projects">
+                  <section className="split-right-project-copy" id={Projects[this.state.index].id2}>
+                    <h4 ref={(c) => { this.one = c }}>{Projects[this.state.index].title}</h4>
+                    <p ref={(c) => { this.two = c }}>{Projects[this.state.index].description}</p>
+                    <h6 ref={(c) => { this.three = c }}>Skills used: {Projects[this.state.index].skills}</h6>
+                    <div className="inline-buttons">
+                    <a
+                      href={Projects[this.state.index].github}
+                      target="_blank"
+                      ref={(c) => { this.four = c }}
+                      >
+                      <button ref={(c) => { this.four = c }}
+                              className="button light-background-button"
+                              >
+                      View Github Repo
+                    </button>
+                    </a>
+                      <a
+                        ref={(c) => { this.five = c }}
+                        href={Projects[this.state.index].url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                          <button
+                            className="button light-background-button"
+                            >view live</button>
+                          </a>
+                        </div>
+                          <div className="project-nav">
+                            <button
+                              onClick={this.handlePaginationClickPrevious.bind(this)}
+                              className={this.state.index === 0 ? 'project-nav-previous-none' : 'project-nav-previous'}
+                              >
+                                <div className="arrow previous-arrow" />
+                                <p>&larr; {this.state.index === 0 ? '' : Projects[this.state.index - 1].title}</p>
+                              </button>
+                              <button
+                                onClick={this.handlePaginationClickNext.bind(this)}
+                                className={this.state.index === 4 ? 'project-nav-next-none' : 'project-nav-next'}
+                                >
+                                  <p>{this.state.index === 4 ? '' : Projects[this.state.index + 1].title} &rarr;</p>
+                                  <div
+                                    className="arrow next-arrow"
+                                  />
+                                </button>
+                              </div>
+                            </section>
+                          </section>
 
-      </article>
-    )
-  }
-}
+                        </article>
+                      )
+                    }
+                  }

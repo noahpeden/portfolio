@@ -72,44 +72,6 @@ export default class DropDownNav extends Component {
               activeClassName="active"
             >Contact</Link>
           </li>
-          <div
-            className="split-left-social nav-social"
-            ref={(c) => { this.five = c }}
-          >
-            <a
-              href="https://twitter.com/noahpeden"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="../lib/images/twitter.svg"
-                className="social-icon"
-                alt="twitter"
-              />
-            </a>
-            <a
-              href="https://github.com/noahpeden"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="../lib/images/gitHub.svg"
-                className="social-icon"
-                alt="git hub"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/noah-peden"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="../lib/images/linkedin.svg"
-                className="social-icon"
-                alt="linkedin"
-              />
-            </a>
-          </div>
         </ul>
       </nav>
     )

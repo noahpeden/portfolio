@@ -26,15 +26,23 @@ export default class SplitLeftMain extends Component {
           <h3
             className="split-left-text"
             ref={(c) => { this.two = c }}
-          >Front-End Web Developer.
+          >Front-End Web Developer
           </h3>
-          <div ref={(c) => { this.three = c }}>
+          <div ref={(c) => { this.three = c }} className="button-container">
             <Link
               to="/Contact"
             >
               <button
                 className="button"
               >Contact Noah
+              </button>
+            </Link>
+            <Link
+              to="/Work"
+            >
+              <button
+                className="button"
+              >View Projects
               </button>
             </Link>
           </div>

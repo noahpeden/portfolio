@@ -52,7 +52,7 @@ export default class SplitRightAbout extends Component {
         >
           <h4 ref={(c) => { this.one = c }}>About Noah</h4>
           <p ref={(c) => { this.two = c }}>
-            I am a Front End Developer with a passion for React, design, travel, and Colorado sports. In 2016 I returned from two years in Mongolia as a Peace Corps volunteer where I developed the educational skills of local teachers in a village of about 1800 population. Combine the communication skills and ability to work in any environment that I gained in Mongolia and the technical prowess I have in front end development,and you get an extremely well rounded developer and that is available to <Link to="/Contact"> work for you.</Link>
+            I am a Front End Developer with a passion for React, design, travel, and Colorado sports. In 2016 I returned from two years in Mongolia as a Peace Corps volunteer where I developed the educational skills of local teachers in a village of about 1800 people. Combine the communication skills and ability to work in any environment that I gained in Mongolia and the technical prowess I have in front end development,and you get an extremely well rounded developer that wants to <Link to="/Contact"> work for you.</Link>
           <br />
           <br />
           <hr className="hr-thing"/>

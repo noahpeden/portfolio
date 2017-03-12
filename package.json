@@ -9,6 +9,7 @@
   "scripts": {
     "start": "webpack-dev-server --hot --inline",
     "build": "webpack",
+    "deploy": "npm build && surge -p build --domain yourdomain.surge.sh",
     "test": "mocha --compilers js:babel-register --require test/helpers/setup.js --recursive"
   },
   "repository": {
@@ -58,6 +59,7 @@
     "sass-loader": "^4.0.2",
     "sinon": "^1.17.6",
     "style-loader": "^0.13.1",
+    "surge": "^0.18.0",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.3"
   },

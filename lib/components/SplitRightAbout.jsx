@@ -50,12 +50,11 @@ export default class SplitRightAbout extends Component {
         <section
           className="split-right-about-me section-spacing"
         >
-          <h4 ref={(c) => { this.one = c }}>About Noah</h4>
+          <h4 ref={(c) => { this.one = c }}>About Me</h4>
           <p ref={(c) => { this.two = c }}>
-            I am a Front End Developer with a passion for React, design, travel, and Colorado sports. In 2016 I returned from two years in Mongolia as a Peace Corps volunteer where I developed the educational skills of local teachers in a village of about 1800 people. Combine the communication skills and ability to work in any environment that I gained in Mongolia and the technical prowess I have in front end development,and you get an extremely well rounded developer that wants to <Link to="/Contact"> work for you.</Link>
+          I am a front end developer with strong skills in React, JavaScript, and UX/UI design. Having just returned from a two year service with the Peace Corps in the mountains of western Mongolia (that's my yurt/ger above), I have a unique perspective on web development and a communicative, team-player mentality. I’ve studied and interned around the globe from Thailand to Peru, from Costa Rica to Scotland. My front end development skills are solid, my design perspectives are international, and my communication skills are global.
           <br />
           <br />
-          <hr className="hr-thing"/>
           <span>
           Here are some of my technical skills that don't involve eagles, yurts, or dung-fires:</span></p>
           <ul
@@ -65,7 +64,7 @@ export default class SplitRightAbout extends Component {
             <li><span>JavaScript, jQuery, HTML5, CSS3/Sass, Git</span></li>
             <li><span>React, React Router, React Redux, Ember, Node.js, Express.js</span></li>
             <li><span>Testing in Mocha, Chai, Enzyme, Jest, Selenium</span></li>
-            <li><span>Speaks fluent Portuguese, Spanish, Mongolian</span></li>
+            <li><span>Fluent in Portuguese, Spanish, Mongolian</span></li>
           </ul>
         </section>
         <hr />

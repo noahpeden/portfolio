@@ -1,18 +1,22 @@
 @media (max-width: 668px) {
   h1 {
-    font-size: 3em;
-  }
-  h3 {
-    font-size: 1.2em;
-  }
-  h4 {
+    margin-top: 10px;
     font-size: 30px;
   }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 20px;
+  }
   p {
-    font-size: 18px;
+    font-size: 16px;
   }
   ul.skills li {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .split-left-container {
+    height: 40%;
   }
   .split-right-container {
     background: white;
@@ -54,7 +58,12 @@
       transform: none;
     }
   }
+  .button-container{
+    margin: -20px 5px;
+  }
   .hamburger-nav {
     background: $pop-color;
+    top: 4px;
+    right: 4px;
   }
 }

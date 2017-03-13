@@ -29,7 +29,6 @@ body {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-
   display: flex;
   display: -webkit-box;
   display: -webkit-flex;
@@ -131,7 +130,7 @@ body {
   background: #0072ff;
 
   img {
-    width: 55%;
+    width: 50%;
   }
 }
 
@@ -196,6 +195,8 @@ hr {
 
 .hr-thing {
   width: 100%;
+  margin-bottom: 20px;
+  margin-top: -5px;
 }
 
 .inline-buttons {

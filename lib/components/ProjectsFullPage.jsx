@@ -120,9 +120,9 @@ export default class ProjectsFullPage extends Component {
                               </button>
                               <button
                                 onClick={this.handlePaginationClickNext.bind(this)}
-                                className={this.state.index === 4 ? 'project-nav-next-none' : 'project-nav-next'}
+                                className={this.state.index === 3 ? 'project-nav-next-none' : 'project-nav-next'}
                                 >
-                                  <p>{this.state.index === 4 ? '' : Projects[this.state.index + 1].title} &rarr;</p>
+                                  <p>{this.state.index === 3 ? '' : Projects[this.state.index + 1].title} &rarr;</p>
                                   <div
                                     className="arrow next-arrow"
                                   />

@@ -21,7 +21,6 @@
 /* skills ul */
 
 ul.skills {
-  font-family: $body-font;
   list-style-type: disc;
   list-style-position: inside;
   margin-top: 5px;
@@ -29,14 +28,13 @@ ul.skills {
   line-height: 1.2em;
 
   li {
-    font-weight: 300;
-    font-size: 13px;
+    font-family: 'Merriweather', sans-serif;
     color: $pop-color;
     padding: 5px 0;
   }
 
   span {
-    color: #969696;
+    color: black;
   }
 }
 

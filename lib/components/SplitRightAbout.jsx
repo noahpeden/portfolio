@@ -52,7 +52,7 @@ export default class SplitRightAbout extends Component {
         >
           <h4 ref={(c) => { this.one = c }}>About Me</h4>
           <p ref={(c) => { this.two = c }}>
-          I am a front end developer with strong skills in React, JavaScript, and UX/UI design. Having just returned from a two year service with the Peace Corps in the mountains of western Mongolia (that's my yurt/ger above), I have a unique perspective on web development and a communicative, team-player mentality. I’ve studied and interned around the globe from Thailand to Peru, from Costa Rica to Scotland. My front end development skills are solid, my design perspectives are international, and my communication skills are global.
+          I am a JavaScript developer with strong skills in React with Redux, UX/UI design, and NodeJS with Express. I chose coding because it's an amazing way to help people and bring ideas to life. I work great independently and in pair programming situations, I love Git work flows, and I feel most natural in Test Driven Development/Agile development processes. As a former Peace Corps volunteer to Mongolia, I have a unique perspective on using tech to help others and using it to make education available to all.
           <br />
           <br />
           <span>
@@ -61,8 +61,8 @@ export default class SplitRightAbout extends Component {
             className="skills"
             ref={(c) => { this.three = c }}
           >
-            <li><span>JavaScript, jQuery, HTML5, CSS3/Sass, Git</span></li>
-            <li><span>React, React Router, React Redux, Ember, Node.js, Express.js</span></li>
+            <li><span>HTML5, CSS3/Sass, HTML Canvas, Git</span></li>
+            <li><span>JavaScript, jQuery, React with Redux and Router, EmberJS, NodeJS, ExpressJS</span></li>
             <li><span>Testing in Mocha, Chai, Enzyme, Jest, Selenium</span></li>
             <li><span>Fluent in Portuguese, Spanish, Mongolian</span></li>
           </ul>
